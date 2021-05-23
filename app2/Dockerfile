@@ -1,2 +1,2 @@
 FROM ubuntu:18.04
-CMD ["echo", "Hello App2!"]
+CMD ["echo", "Hello application2!"]
