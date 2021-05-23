@@ -1,2 +1,2 @@
 FROM ubuntu:18.04
-CMD ["echo", "Hello WebHook!"]
+CMD ["echo", "Hello app1!"]
