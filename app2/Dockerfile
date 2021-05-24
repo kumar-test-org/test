@@ -1,2 +1,2 @@
 FROM ubuntu:18.04
-CMD ["echo", "new project"]
+CMD ["echo", "new build project"]
