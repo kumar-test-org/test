@@ -1,2 +1,2 @@
 FROM ubuntu:18.04
-CMD ["echo", "Hola application2!"]
+CMD ["echo", "new project"]
