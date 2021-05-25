@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Installing venv...
+      - python3 -m venv venv
+      - . venv/bin/activate
+      - pip3 install -r requirements.txt
+  build:
+    commands:
+      - echo deploying to airflow
+  post_build:
+    commands:
+      - echo deployment completed on `date`
