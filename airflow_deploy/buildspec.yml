@@ -3,9 +3,6 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing venv...
-      - python3 -m venv venv
-      - . venv/bin/activate
       - pip3 install -r airflow_deploy/requirements.txt
   pre_build:
     commands:
