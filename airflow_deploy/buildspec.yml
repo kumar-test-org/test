@@ -11,8 +11,11 @@ phases:
   pre_build:
     commands:
       - echo running flake8 test
-      - flake8 airflow_deploy/flake_test.py
+      - . venv/bin/activate
+      - flake8 airflow_deploy/flake_test.py  
+      - deactivate
     on-failure: ABORT
+
   build:
     commands:
       - echo deploying to airflow
