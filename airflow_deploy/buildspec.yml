@@ -15,7 +15,6 @@ phases:
       - flake8 airflow_deploy/flake_test.py  
       - . deactivate
     on-failure: ABORT
-
   build:
     commands:
       - echo deploying to airflow
