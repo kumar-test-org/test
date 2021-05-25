@@ -12,7 +12,6 @@ phases:
       - echo running flake8 test
       - flake8 airflow_deploy/flake_test.py  
     on-failure: ABORT
-
   build:
     commands:
       - echo deploying to airflow
