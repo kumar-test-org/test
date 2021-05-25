@@ -6,7 +6,7 @@ phases:
       - echo Installing venv...
       - python3 -m venv venv
       - . venv/bin/activate
-      - pip3 install -r requirements.txt
+      - pip3 install -r airflow_deploy/requirements.txt
   build:
     commands:
       - echo deploying to airflow
