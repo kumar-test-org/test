@@ -16,5 +16,5 @@ phases:
     commands:
       - aws ssm get-parameter --name KUMARTEST --with-decryption --query Parameter.Value --output text > ~/.ssh/airflow_dev.pem
       - chmod 600 ~/.ssh/airflow_dev.pem
-      - scp -o StrictHostKeyChecking=no -i ~/.ssh/airflow_dev.pem  airflow_deploy/flake_test.py airflow@10.74.196.116:/home/airflow/
+      - scp -o StrictHostKeyChecking=no  airflow_deploy/flake_test.py airflow@10.74.196.116:/home/airflow/
       - echo deployment completed on `date`
